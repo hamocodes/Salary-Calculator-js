@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Simulation de salaire du formateur vacataire</title>
+</head>
+<body>
+    <form id="formulaireSalaire">
+        <label for="nom">Nom:</label> 
+        <input type="text" id="nom" name="nom" placeholder="Nom du vacataire">
+        <label for="heures">Nombre d’heures enseignées:</label>
+        <input type="text" id="heures" name="heures" placeholder="e.g. 40">
+        <label for="taux">Taux horaire:</label>
+        <select id="taux" name="taux">
+            <option value="120">120</option>
+            <option value="150">150</option>
+            <option value="200">200</option>
+        </select>
+        <button class="btn1" type="button" onclick="calculer()">Calculer le salaire</button>
+    </form>
+
+    <table id="tableauResultats">
+        <tr>
+            <th>Nom</th>
+            <th>Nombre d'heures enseignées</th>
+            <th>Taux horaire</th>
+            <th>Salaire brut</th>
+            <th>Taux de l’IR</th>
+            <th>Montant de l’IR</th>
+            <th>Salaire net</th>
+            <th>Action</th>       
+        </tr>     
+    </table>
+
+</body>
+</html>

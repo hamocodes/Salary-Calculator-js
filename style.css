@@ -1,0 +1,50 @@
+#formulaireSalaire label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+#formulaireSalaire input[type="text"],
+#formulaireSalaire select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#formulaireSalaire .btn1 {
+    padding: 7px;
+    background-color: #007BFF;
+    color: gainsboro;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#formulaireSalaire .btn1:hover {
+    background-color: #0056b3;
+}
+
+button {
+    padding: 7px;
+    background-color: red;
+    color: gainsboro;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#tableauResultats {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+#tableauResultats th, #tableauResultats td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
