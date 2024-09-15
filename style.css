@@ -1,3 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.intro {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 16px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
 #formulaireSalaire label {
     display: block;
     margin-bottom: 6px;
@@ -47,4 +96,39 @@ button {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: left;
+}
+.table-wrapper {
+    margin-top: 40px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 20px;
+    }
+    .intro {
+        font-size: 14px;
+    }
+
+    #tableauResultats th, #tableauResultats td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #formulaireSalaire input[type="text"],
+    #formulaireSalaire select {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #formulaireSalaire .btn1 {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
