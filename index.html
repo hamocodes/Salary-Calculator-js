@@ -8,32 +8,47 @@
     <title>Simulation de salaire du formateur vacataire</title>
 </head>
 <body>
-    <form id="formulaireSalaire">
-        <label for="nom">Nom:</label> 
-        <input type="text" id="nom" name="nom" placeholder="Nom du vacataire">
-        <label for="heures">Nombre d’heures enseignées:</label>
-        <input type="text" id="heures" name="heures" placeholder="e.g. 40">
-        <label for="taux">Taux horaire:</label>
-        <select id="taux" name="taux">
-            <option value="120">120</option>
-            <option value="150">150</option>
-            <option value="200">200</option>
-        </select>
-        <button class="btn1" type="button" onclick="calculer()">Calculer le salaire</button>
-    </form>
+    <nav>
+        <div class="nav-container">
+            <h1>Simulation de Salaire</h1>
+        </div>
+    </nav>
 
-    <table id="tableauResultats">
-        <tr>
-            <th>Nom</th>
-            <th>Nombre d'heures enseignées</th>
-            <th>Taux horaire</th>
-            <th>Salaire brut</th>
-            <th>Taux de l’IR</th>
-            <th>Montant de l’IR</th>
-            <th>Salaire net</th>
-            <th>Action</th>       
-        </tr>     
-    </table>
+    <div class="intro">
+        <p>Bienvenue sur notre simulateur de salaire pour formateurs vacataires au Maroc. Utilisez cet outil pour estimer rapidement votre rémunération en fonction des heures d'enseignement et du taux horaire choisi. Obtenez une vue claire de votre salaire brut, des déductions fiscales, et du montant net que vous recevrez.</p>
+    </div>
+    
+    <div class="container">
+
+        <form id="formulaireSalaire">
+            <label for="nom">Nom:</label> 
+            <input type="text" id="nom" name="nom" placeholder="Nom du vacataire">
+            <label for="heures">Nombre d’heures enseignées:</label>
+            <input type="text" id="heures" name="heures" placeholder="e.g. 40">
+            <label for="taux">Taux horaire:</label>
+            <select id="taux" name="taux">
+                <option value="120">120</option>
+                <option value="150">150</option>
+                <option value="200">200</option>
+            </select>
+            <button class="btn1" type="button" onclick="calculer()">Calculer le salaire</button>
+        </form>
+    
+        <div class="table-wrapper">
+            <table id="tableauResultats">
+                <tr>
+                    <th>Nom</th>
+                    <th>Nombre d'heures enseignées</th>
+                    <th>Taux horaire</th>
+                    <th>Salaire brut</th>
+                    <th>Taux de l’IR</th>
+                    <th>Montant de l’IR</th>
+                    <th>Salaire net</th>
+                    <th>Action</th>       
+                </tr>     
+            </table>
+        </div>
+    </div>
 
 </body>
 </html>
